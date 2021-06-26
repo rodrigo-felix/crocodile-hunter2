@@ -118,7 +118,6 @@ function attackDone(){
             imgGameOver.onload = function(){
                 ctx.drawImage(imgGameOver, 0, 0)
             }
-            console.log(imgGameOver)
         }
     }
 }
@@ -131,7 +130,6 @@ function success(){
             clearArea()
             imgSuccess.onload = function(){
                 ctx.drawImage(imgSuccess, 0, 0)
-
             }
             console.log(imgSuccess)
         }
@@ -149,8 +147,16 @@ function updateArea() {
 }
 
 document.addEventListener("keyup", function(event) {
-    if(event.key = "Enter"){
+    if(event.key === "Enter"){
         gameArea.start()
         console.log("enter test")
+    }
+})
+
+document.addEventListener("keydown", function(event2) {
+    if(event2.key === "r"){
+        window.location.reload(true);
+        gameArea.start();
+        console.log("r test")
     }
 })
