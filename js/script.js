@@ -131,7 +131,7 @@ function success(){
             clearArea()
             imgSuccess.onload = function(){
                 ctx.drawImage(imgSuccess, 0, 0)
-                
+
             }
             console.log(imgSuccess)
         }
@@ -148,4 +148,9 @@ function updateArea() {
     gameArea.drawScore()
 }
 
-gameArea.start()
+document.addEventListener("keyup", function(event) {
+    if(event.key = "Enter"){
+        gameArea.start()
+        console.log("enter test")
+    }
+})
