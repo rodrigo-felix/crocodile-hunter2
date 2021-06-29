@@ -3,15 +3,16 @@ let ctx = canvas.getContext('2d');
 
 const gameArea = {
     frames: 0,
-    level: 1,
-    speed: 5,
+    level: 0,
+    speed: 0,
     crocs: [],
     score: 0,
+    target: 0,
     drawScore: function() {
         ctx.font = '25px arial';
         ctx.fillStyle = 'white'
         ctx.fillText(`Score ${this.score} |`, 20, 670);
-        ctx.fillText(`Your target is: 200`, 170, 670);
+        ctx.fillText(`Your target is: ${this.target}`, 170, 670);
     },
     start: function (){
         this.interval = setInterval(updateArea, 20);
@@ -61,7 +62,7 @@ class Croc {
 }
 
 function createCrocs(){
-    if (gameArea.frames % 200 === 0){
+    if (gameArea.frames % 200 === 0) {
         let coluna1 = 30;
         let coluna2 = 120;
         let coluna3 = 210;
@@ -123,7 +124,7 @@ function attackDone(){
 }
 
 function success(){
-    if( gameArea.score === 200){
+    if( gameArea.score === gameArea.target){
             const imgSuccess = new Image()
             imgSuccess.src = './style/game_images/success.PNG'
             clearInterval(gameArea.interval)
@@ -146,17 +147,37 @@ function updateArea() {
     gameArea.drawScore()
 }
 
+
 document.addEventListener("keyup", function(event) {
-    if(event.key === "Enter"){
+    if(event.key === "1"){
+        gameArea.speed = 1;
+        gameArea.level = 1;
+        gameArea.target = 200;
         gameArea.start()
-        console.log("enter test")
+    }
+})
+
+document.addEventListener("keyup", function(event) {
+    if(event.key === "2"){
+        gameArea.speed = 3;
+        gameArea.level = 2;
+        gameArea.target = 300;
+        gameArea.start()
+    }
+})
+
+document.addEventListener("keyup", function(event) {
+    if(event.key === "3"){
+        gameArea.speed = 5;
+        gameArea.level = 3;
+        gameArea.target = 400;
+        gameArea.start()
     }
 })
 
 document.addEventListener("keydown", function(event2) {
     if(event2.key === "r"){
         window.location.reload(true);
-        gameArea.start();
-        console.log("r test")
+        gameArea.start()
     }
 })
