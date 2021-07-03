@@ -1,20 +1,45 @@
 canvas {
     border: 3px solid darkgreen;
+    background-color: darkgreen;
     flex: auto;
 }
 
 .carousel-item img {
   width: auto;
-  height: 450px;
-  max-height: 450px;
+  height: 400px;
+  max-height: 400px;
 }
 
 .container img {
     display: flex;
-    border-radius: 15%;
+    border-radius: 10%;
 }
 
 .container h2 {
     text-align: center;
     padding: 2%;
+}
+
+.container p {
+    text-align: left;
+    padding: 2%;
+}
+
+#game {
+    margin-top: 5%;
+    text-align: center;
+    background-image: url('/style/game_images/bg_mosaic.jpg');
+    background-repeat: repeat;
+    padding: 1%;
+}
+
+#game h2{
+    padding: 2%;
+    background-color:lightgoldenrodyellow;
+    border-color: darkgreen;
+}
+
+#control {
+    background-color: grey;
+    font-style: bol;
 }

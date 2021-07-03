@@ -19,9 +19,8 @@
               </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link" href="#">About the game</a>
-                        <a class="nav-link" href="#">How to Play?</a>
-                        <a class="nav-link" href="#">Click here 2 Play</a>
+                        <a class="nav-link" href="#atg">About the game</a>
+                        <a class="nav-link" href="#gametag">Click here 2 Play</a>
                     </div>
                 </div>
             </div>
@@ -65,35 +64,35 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-        
           <div class="container">
-            <div class="row">
-              <H2>About the game</H2>
-              <div class="col-sm-8">
+            <div id=cnt-e class="row">
+              <H2><a id="atg"></a>About the game</H2>
+              <div class="col-sm-6">
                 <img src="/style/game_images/btn-atg_v1.png" alt="Button-about" width="250px" height="250px">
               </div>
               <div class="col-sm-4">
-                text about
-              </div>
-            </div>
-            <div class="row">
-              <H2>How to Play?</H2>
-              <div class="col-sm-4">
-                text how to play?
-              </div>
-              <div class="col-sm-8">
-                <img src="/style/game_images/btn-htp_v1.png" alt="Button-about" width="250px" height="250px">
+                <p>This game consists of saving a distracted heron, which does not see intelligent crocodiles approaching to carry out the attack.</p></br>
+                <p></p>
               </div>
             </div>
           </div>
         
-          <div class="row">
-            <H2>Game</H2>
-              <div class="col-6 col-md-4">
-                <button id="btn-reset" type="button" class="btn btn-primary">RESET</button>
+          <div id=game class="row">
+            <H2><a id="gametag"></a>Game</H2>
+              <div id=control class="col-6 col-md-4">
+                <h2>How to Play?</h2>
+                <p>
+                  To start the game, choose an level and ENJOY :)</p><br>
+                  Theese level are sorted by difficulty.
+                </p>
+                
                 <button id="btn-l1" type="button" class="btn btn-success">Level 1</button>
                 <button id="btn-l2" type="button" class="btn btn-warning">Level 2</button>
-                <button id="btn-l3" type="button" class="btn btn-danger">Level 3</button>
+                <button id="btn-l3" type="button" class="btn btn-danger">Level 3</button><br>
+                <p>
+                  If you lost, click here to <b>Reset</b> the Game
+                </p><br>
+                <button id="btn-reset" type="button" class="btn btn-primary">RESET</button>
               </div>
               <div class="col-6 col-md-4">
                 <canvas id="area" width="400" height="700"></canvas>
