@@ -147,37 +147,34 @@ function updateArea() {
     gameArea.drawScore()
 }
 
+var btnR = document.querySelector("#btn-reset");
+var btnL1 = document.querySelector("#btn-l1")
+var btnL2 = document.querySelector("#btn-l2")
+var btnL3 = document.querySelector("#btn-l3")
 
-document.addEventListener("keyup", function(event) {
-    if(event.key === "1"){
+btnR.addEventListener("click", function() {
+    window.location.reload(true);
+    gameArea.start()
+})
+
+btnL1.addEventListener("click", function() {
         gameArea.speed = 1;
         gameArea.level = 1;
         gameArea.target = 200;
         gameArea.start()
-    }
 })
 
-document.addEventListener("keyup", function(event) {
-    if(event.key === "2"){
+btnL2.addEventListener("click", function() {
         gameArea.speed = 3;
         gameArea.level = 2;
         gameArea.target = 300;
         gameArea.start()
-    }
 })
 
-document.addEventListener("keyup", function(event) {
-    if(event.key === "3"){
+btnL3.addEventListener("click", function() {
         gameArea.speed = 5;
         gameArea.level = 3;
         gameArea.target = 400;
         gameArea.start()
-    }
 })
 
-document.addEventListener("keydown", function(event2) {
-    if(event2.key === "r"){
-        window.location.reload(true);
-        gameArea.start()
-    }
-})

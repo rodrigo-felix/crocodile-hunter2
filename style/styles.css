@@ -2,3 +2,19 @@ canvas {
     border: 3px solid darkgreen;
     flex: auto;
 }
+
+.carousel-item img {
+  width: auto;
+  height: 450px;
+  max-height: 450px;
+}
+
+.container img {
+    display: flex;
+    border-radius: 15%;
+}
+
+.container h2 {
+    text-align: center;
+    padding: 2%;
+}
