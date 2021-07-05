@@ -28,14 +28,14 @@ canvas {
 #game {
     margin-top: 5%;
     text-align: center;
-    background-image: url('./style/game_images/bg_mosaic.jpg');
+    background-image: url('./game_images/bg_mosaic.jpg');
     background-repeat: repeat;
     padding: 1%;
 }
 
 #game h2{
     padding: 2%;
-    background-color:lightgoldenrodyellow;
+    background-color:orange;
     border-color: darkgreen;
 }
 
