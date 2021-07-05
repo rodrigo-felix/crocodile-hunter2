@@ -3,9 +3,11 @@
 About the Game
 
 What's the objective?
+
   -> The game consists of alligators that go against the heron to carry out a surprise attack.
 
 How to Play?
+
   -> As alligators appear on the screen, you need using the mouse to click on them so that they disappear from the screen and do not attack the heron.
 
   ->  Theese level are sorted by difficulty, and each level have an different target.
