@@ -7,6 +7,8 @@ What's the objective?
 
 How to Play?
   > As alligators appear on the screen, you need using the mouse to click on them so that they disappear from the screen and do not attack the heron.
+
+  >  
   
 ------------------------------------------------------------------------------------------------------------------------------
 
