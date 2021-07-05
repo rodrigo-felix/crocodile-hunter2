@@ -28,7 +28,7 @@ canvas {
 #game {
     margin-top: 5%;
     text-align: center;
-    background-image: url('/style/game_images/bg_mosaic.jpg');
+    background-image: url('./style/game_images/bg_mosaic.jpg');
     background-repeat: repeat;
     padding: 1%;
 }
